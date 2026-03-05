@@ -4,41 +4,111 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Michelle Hiu</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="homeStyle.css">
     </head>
     <body>
         <header>
-            <h1>Michelle Hiu</h1>
+            <h1><b>Michelle Hiu</b></h1>
             <nav>
-                <a href="homeIndex.html">Home</a>
-                <a href="aboutIndex.html">About</a>
-                <a href="projectIndex.html">Projects</a>
+                <a href="Index.html">Home</a>
+                <a href="#aboutMe">About</a>
+                <a href="#myProjects">Projects</a>
+                <a href="#contactMe">Contact</a>
             </nav>
         </header>
         <main>
             <section class="aboutMe">
-                <img src="img/selfphoto.jpeg" alt="self photo"/>
-                <h2>Hi, I'm Michelle </h2>
-                <p> A third year Informatics student from Indonesia. I'm continuously developing my skills in web and software development through hands-on projects and coursework. Here, you'll find a collection of my work as I prepare for opportunities in the tech industry.</p>
-                <a  class="btnAbout" href="aboutIndex.html">Learn More About Me</a>
+                <img src="img/selfphoto.jpeg" alt="self photo" style="width: 200px;"/>
+                <article>
+                    <h2>Hi, I'm Michelle </h2>
+                    <p> 
+                        A third year Informatics student from Indonesia. I'm continuously developing my skills in web and software development through hands-on projects and coursework. Here, you'll find a collection of my work as I prepare for opportunities in the tech industry.
+                    </p>
+                    <a  class="btnAbout" href="aboutIndex.html">Learn More About Me</a>
+                </article>
             </section>
+
             <hr>
-            <section class="projects">
+
+            <section class="projects" id="myProjects">
                 <h2> My Projects</h2>
-                <h4>KANDEP Website</h4>
-                <h4>Skin Tone Detector</h4>
-                <h4>Barcode HIMIF</h4>
+                <table style="width: 100%; text-align: center">
+                    <thead>
+                        <tr>
+                            <th style="border-right: 1px solid black;">Tenant Recomendation</th>
+                            <th style="border-right: 1px solid black;">Skin Tone Detector</th> 
+                            <th >Student Association's Barcode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border-right: 1px solid black;">
+                                <img src="img/Kandep.png" alt="sample" style="width: 250px; height: auto;"/>
+                            </td>
+                            <td style="border-right: 1px solid black;">
+                                <img src="img/skinToneDetector.png" alt="sample" style="width: 250px"/>
+                            </td>
+                            <td>
+                            <img src="img/barcodeHIMIF.png" alt="sample" style="width: 250px"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-right: 1px solid black;">
+                                <p>
+                                    A search engine that provides tenant recommendations based on community reviews and budget preferences.
+                                </p>
+                            </td>
+                            <td style="border-right: 1px solid black;">
+                                <p>
+                                    A web application that detects skin tone using a machine learning model trained on a diverse dataset of skin tones.
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    A simple website that provides a barcode for the student association, allowing students to easily register themselves to join the student association.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>                   
+                </table>
                 <a class="btnProject" href="projectIndex.html">View All Projects</a>
             </section>
+
             <hr>
+
+            <section class="contact" id="contactMe">
+                <h2>Contact Me</h2>
+                <form method="post">
+                    <label for="input-name">Name:</label><br>
+                    <input type="text" id="input-name" name="name" placeholder="What should I call you" required/><br>
+                    <label for="input-email">Email:</label><br>
+                    <input type="email" id="input-email" name="email" placeholder="Your email" required/><br>
+                    <label for="input-message">Message:</label><br>
+                    <textarea
+                        id="form-message"
+                        name="message"
+                        placeholder="Write your message"
+                        rows="5"
+                        required
+                    ></textarea>
+                    <br>
+                    <label for="reason">Reason for contact:</label><br>
+                    <select id="reason" name="reason" ">
+                        <option value="job">Job Opportunity</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <br><br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
         </main>
-        <footer>
-            <h2>Contact Me</h2>
+        <footer style="text-align: center; padding: 20px; background-color: #f9e9db;">
             <p>Email: michellehiu05@gmail.com</p>
             <a href="https://www.linkedin.com/in/michelle-hiu-24a8792b3/">LinkedIn</a> <br>
             <a href="https://github.com/MicelHiu">GitHub   </a>
-            <h5>Â© 2024 Michelle Hiu. All rights reserved.</h5>
+            <h5>© 2026 Michelle Hiu. All rights reserved.</h5>
         </footer>
     </body>
 </html>
