@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+    </head>
+    <body>
+        <header>
+            <h1>Michelle Hiu</h1>
+            <nav>
+                <a href="Index.html">Home</a>
+                <a href="aboutIndex.html">About</a>
+                <a href="projectIndex.html">Projects</a>
+                <a href="contactIndex.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="contact" id="contactMe">
+                <h2>Contact Me</h2>
+                <form method="post">
+                    <label for="input-name">Name:</label><br>
+                    <input type="text" id="input-name" name="name" placeholder="What should I call you" required/><br>
+                    <label for="input-email">Email:</label><br>
+                    <input type="email" id="input-email" name="email" placeholder="Your email" required/><br>
+                    <label for="input-message">Message:</label><br>
+                    <textarea
+                        id="form-message"
+                        name="message"
+                        placeholder="Write your message"
+                        rows="5"
+                        required
+                    ></textarea>
+                    <br>
+                    <label for="reason">Reason for contact:</label><br>
+                    <select id="reason" name="reason" ">
+                        <option value="job">Job Opportunity</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <br><br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <footer style="text-align: center; padding: 20px; background-color: #f9e9db;">
+            <p>Email: michellehiu05@gmail.com</p>
+            <a href="https://www.linkedin.com/in/michelle-hiu-24a8792b3/">LinkedIn</a> <br>
+            <a href="https://github.com/MicelHiu">GitHub   </a>
+            <h5>© 2026 Michelle Hiu. All rights reserved.</h5>
+        </footer>
+    </body>
+</html>
