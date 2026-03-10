@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Michelle Hiu</title>
-        <link rel="stylesheet" href="homeStyle.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header>
@@ -17,8 +17,8 @@
             </nav>
         </header>
         <main>
-            <section class="aboutMe">
-                <img src="img/selfphoto.jpeg" alt="self photo" style="width: 200px;"/>
+            <section class="aboutMe" id="aboutMe">
+                <img src="images/selfphoto.jpeg" alt="self photo" style="width: 200px;"/>
                 <article>
                     <h2>Hi, I'm Michelle </h2>
                     <p> 
@@ -41,13 +41,13 @@
                     <tbody>
                         <tr>
                             <td style="border-right: 1px solid black;">
-                                <img src="img/Kandep.png" alt="sample" style="width: 250px; height: auto;"/>
+                                <img src="images/Kandep.png" alt="sample" style="width: 250px; height: auto;"/>
                             </td>
                             <td style="border-right: 1px solid black;">
-                                <img src="img/skinToneDetector.png" alt="sample" style="width: 250px"/>
+                                <img src="images/skinToneDetector.png" alt="sample" style="width: 250px"/>
                             </td>
                             <td>
-                            <img src="img/barcodeHIMIF.png" alt="sample" style="width: 250px"/>
+                            <img src="images/barcodeHIMIF.png" alt="sample" style="width: 250px"/>
                             </td>
                         </tr>
                         <tr>
@@ -79,7 +79,7 @@
                     <input type="text" id="input-name" name="name" placeholder="What should I call you" required/><br>
                     <label for="input-email">Email:</label><br>
                     <input type="email" id="input-email" name="email" placeholder="Your email" required/><br>
-                    <label for="input-message">Message:</label><br>
+                    <label for="form-message">Message:</label><br>
                     <textarea
                         id="form-message"
                         name="message"
@@ -89,7 +89,7 @@
                     ></textarea>
                     <br>
                     <label for="reason">Reason for contact:</label><br>
-                    <select id="reason" name="reason" ">
+                    <select id="reason" name="reason">
                         <option value="job">Job Opportunity</option>
                         <option value="collaboration">Collaboration</option>
                         <option value="feedback">Feedback</option>
