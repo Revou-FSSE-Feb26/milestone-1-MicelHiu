@@ -15,3 +15,4 @@ This website is a personal portfolio designed to showcase my projects, skills, a
 # Technology Used
 - Source code : HTML, CSS
 - Deploy : GitHub
+- Link URL : https://revou-fsse-feb26.github.io/milestone-1-MicelHiu/
