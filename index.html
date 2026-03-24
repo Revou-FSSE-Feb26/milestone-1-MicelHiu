@@ -18,60 +18,58 @@
         </header>
         <main>
             <section class="aboutMe" id="aboutMe">
-                <img src="images/selfphoto.jpeg" alt="self photo" style="width: 200px;"/>
+                <img src="images/selfphoto.jpeg" alt="self photo"/>
                 <article>
-                    <h2>Hi, I'm Michelle </h2>
+                    <h2>Hi, I'm Michelle</h2>
                     <p> 
                         A third year Informatics student from Indonesia. I'm continuously developing my skills in web and software development through hands-on projects and coursework. Here, you'll find a collection of my work as I prepare for opportunities in the tech industry.
                     </p>
                     <a  class="btnAbout" href="pages/about.html">Learn More About Me</a>
                 </article>
             </section>
-            <hr>
             <section class="projects" id="myProjects">
                 <h2> My Projects</h2>
-                <table style="width: 100%; text-align: center">
-                    <thead>
-                        <tr>
-                            <th style="border-right: 1px solid black;">Tenant Recomendation</th>
-                            <th style="border-right: 1px solid black;">Skin Tone Detector</th> 
-                            <th >Student Association's Barcode</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="border-right: 1px solid black;">
-                                <img src="images/Kandep.png" alt="sample" style="width: 250px; height: auto;"/>
-                            </td>
-                            <td style="border-right: 1px solid black;">
-                                <img src="images/skinToneDetector.png" alt="sample" style="width: 250px"/>
-                            </td>
-                            <td>
-                            <img src="images/barcodeHIMIF.png" alt="sample" style="width: 250px"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border-right: 1px solid black;">
-                                <p>
-                                    A search engine that provides tenant recommendations based on community reviews and budget preferences.
-                                </p>
-                            </td>
-                            <td style="border-right: 1px solid black;">
-                                <p>
-                                    A web application that detects skin tone using a machine learning model trained on a diverse dataset of skin tones.
-                                </p>
-                            </td>
-                            <td>
-                                <p>
-                                    A simple website that provides a barcode for the student association, allowing students to easily register themselves to join the student association.
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>                   
-                </table>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Tenant Recommendation</h3>
+                        <img src="images/Kandep.png" alt="sample"/>
+                        <p>
+                            A search engine that provides tenant recommendations based on community reviews and budget preferences.
+                        </p>
+                        <span>Python</span>
+                        <span>CSS</span>
+                    </article>
+                    <article class="card">
+                        <h3>Skin Tone Detector</h3>
+                        <img src="images/skinToneDetector.png" alt="sample" />
+                        <p>
+                            A web application that detects skin tone using a machine learning model trained on a diverse dataset of skin tones.
+                        </p>
+                        <span>Python</span>
+                        <span>CSS</span>
+                    </article>
+                    <article class="card">
+                        <h3>Student Association's Barcode</h3>
+                        <img src="images/barcodeHIMIF.png" alt="sample"/>
+                        <p>
+                            A simple website that provides a barcode for the student association, allowing students to easily register themselves to join the student association.
+                        </p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </article>
+                    <article class="card">
+                        <h3>Patient Health Service Application</h3>
+                        <img src="images/AplikasiTPMD.png" alt="sample"/>
+                        <p>
+                            A patient-focused application designed for private medical practices that enable users to register for queues, monitor real-time queue statu, and access their medical history, including diagnoses and treatments such as prescribed medication.
+                        </p>
+                        <span>JavaFX</span>
+                        <span>FXML</span>
+                        <span>MySQL</span>
+                    </article>
+                </div>
                 <a class="btnProject" href="pages/projects.html">View All Projects</a>
             </section>
-            <hr>
             <section class="contact" id="contactMe">
                 <h2>Contact Me</h2>
                 <form action="#" method="get">
@@ -100,7 +98,7 @@
                 </form>
             </section>
         </main>
-        <footer style="text-align: center; padding: 20px; background-color: #f9e9db;">
+        <footer style="text-align: center; padding: 20px;">
             <p>Email: michellehiu05@gmail.com</p>
             <a href="https://www.linkedin.com/in/michelle-hiu-24a8792b3/">LinkedIn</a> <br>
             <a href="https://github.com/MicelHiu">GitHub   </a>
