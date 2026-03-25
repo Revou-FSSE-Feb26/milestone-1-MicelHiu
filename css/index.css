@@ -31,15 +31,14 @@ nav a {
     text-decoration: none;
     color: #fadcd5;;
     font-size: 16px;
+    display: inline-block;
     transition: opacity 0.3s ease;
 }
 
-nav li {
-    text-decoration: none;
-    
-}
 nav a:hover {
     opacity: 0.7;
+    transition: 0.4s;
+    transform: scale(1.1);
 }
 
 main {
@@ -71,9 +70,12 @@ main {
     padding: 24px;
 }
 
+h2 {
+    font-size: 34px;
+}
+
 .aboutMe h2 {
     letter-spacing: 2px;
-    font-size: 34px;
 }
 
 .aboutMe p {
@@ -103,8 +105,7 @@ main {
     flex-direction: column;
 }
 
-.projects h2 {
-    font-size: 34px;
+.subject {
     margin-bottom: 16px;
     text-align: center;
 }
@@ -147,7 +148,109 @@ main {
     border-radius: 8px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
 
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fadcd5;
+}
+
+.contact-form label {
+    font-size: 18px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button[type="reset"] {
+    margin-right: 10px;
+    background: #1B0C1A;
+    color: #fadcd5;
+    font-weight: bold;
+}
+
+.contact-form button[type="submit"] {
+    background: #fadcd5;
+    color: #2d222f;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #765d67;
+}
+
+/*footer*/
 footer {
     background: #6d3c52;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
 }
+
+footer h3 {
+    font-size: 24px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.navigation,
+.socials {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fadcd5;
+}
+
+.navigation a::before {
+    content: ">";
+    margin-right: 8px;
+}
+
+.navigation a:hover, 
+.socials a:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fadcd5;
+}
+
+
