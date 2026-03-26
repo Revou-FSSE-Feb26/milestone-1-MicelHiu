@@ -49,6 +49,7 @@ main {
 .aboutMe {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 24px;
 }
 
@@ -67,6 +68,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 24px;
 }
 
@@ -146,6 +148,10 @@ h2 {
     margin-top: 10px;
     color: #2d222f;
     border-radius: 8px;
+}
+
+.projects a:hover{
+    background: #765d67;
 }
 
 .contact {
