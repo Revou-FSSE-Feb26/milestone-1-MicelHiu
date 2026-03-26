@@ -44,3 +44,109 @@ nav a:hover {
 main {
     margin: 56px;
 }
+
+.projects {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 34px;
+}
+.subject {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid;
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 300px;
+}
+
+.card span {
+    display: inline-block;
+    padding: 8px;
+    margin-top: 8px;
+    border: 2px solid #fadcd5;
+    border-radius: 4px;
+}
+
+.projects a {
+    display: inline-block;
+    align-self: flex-end;
+    text-decoration: none;
+    background: #fadcd5;
+    padding: 10px 16px;
+    margin-top: 10px;
+    color: #2d222f;
+    border-radius: 8px;
+}
+
+.projects h3 {
+    text-align: center;
+    margin-top: 28px;
+}
+
+/*footer*/
+footer {
+    background: #6d3c52;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer h3 {
+    font-size: 24px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    margin-top: 20px
+}
+
+.navigation,
+.socials {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fadcd5;
+}
+
+.navigation a::before {
+    content: ">";
+    margin-right: 8px;
+}
+
+.navigation a:hover, 
+.socials a:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fadcd5;
+}
