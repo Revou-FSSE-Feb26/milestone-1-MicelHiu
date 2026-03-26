@@ -90,7 +90,7 @@ blockquote #quotes {
 }
 
 .background p,
-.reasons p {
+.reason p {
     padding-bottom: 8px;
     gap: 8px;
     text-indent: 30px;
@@ -129,12 +129,15 @@ h2 {
     margin-top: 16px;
 }
 
-.reasons {
+.reason {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: justify;
+    margin: 24px;
+    line-height: 1.5;
 }
+
 /*footer*/
 footer {
     background: #6d3c52;
