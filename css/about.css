@@ -105,10 +105,15 @@ h2 {
 .education {
     margin: 24px;
 }
+
 .education ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
+    gap: 56px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .education li {
@@ -118,6 +123,7 @@ h2 {
 
 .education h3 {
     padding-top: 8px;
+    font-size: 22px;
 }
 
 .skill-container {
