@@ -241,7 +241,9 @@ footer h3 {
 .socials {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
 .navigation a {
