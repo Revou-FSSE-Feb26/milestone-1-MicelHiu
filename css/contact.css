@@ -51,6 +51,7 @@ nav a:hover {
 main {
     flex: 1;
     margin: 56px;
+    min-height: 0;
 }
 
 h2 {
@@ -65,8 +66,7 @@ h2 {
 }
 
 .contact-form {
-    width: 100%;
-    max-width: 600px;
+    width: min(100%, 600px);
 }
 
 .contact-form input,
@@ -139,7 +139,7 @@ footer h3 {
 .socials {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
 }
 
 .navigation a {
@@ -161,4 +161,35 @@ footer h3 {
 .socials a {
     text-decoration: none;
     color: #fadcd5;
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        padding: 14px 20px;
+    }
+    main {
+        margin: 34px 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        margin: 20px 12px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
 }

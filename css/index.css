@@ -235,7 +235,7 @@ footer h3 {
 .socials {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
 }
 
 .navigation a {
@@ -259,4 +259,48 @@ footer h3 {
     color: #fadcd5;
 }
 
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 14px 22px;
+    }
 
+    main {
+        margin: 30px 18px;
+    }
+
+    .projects {
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        margin: 20px 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
