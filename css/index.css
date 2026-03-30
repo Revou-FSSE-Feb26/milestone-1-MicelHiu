@@ -14,7 +14,7 @@ body {
 
 /* header */
 header {
-    background: #1B0C1A;;
+    background: #1B0C1A;
     padding: 20px 80px;
     display: flex;
     justify-content: space-between;
@@ -63,6 +63,7 @@ main {
     border-radius: 24px;
     box-shadow: 7px 4px 9px 3px rgba(118,93,103,0.97);
     width: 250px;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -135,6 +136,7 @@ h2 {
 
 .card img {
     width: 300px;
+    max-width: 100%;
 }
 
 .card span {
@@ -220,14 +222,35 @@ h2 {
 /*footer*/
 footer {
     background: #6d3c52;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
+    position: relative;
+    
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
 }
 
 footer h3 {
     font-size: 24px;
+    position: relative;
+    z-index: 1;
 }
 
 .profile {
@@ -235,6 +258,8 @@ footer h3 {
     flex-direction: column;
     justify-content: center;
     align-items: first baseline;
+    position: relative;
+    z-index: 1;
 }
 
 .navigation,
@@ -244,6 +269,8 @@ footer h3 {
     justify-content: center;
     align-items: center;
     text-align: left;
+    position: relative;
+    z-index: 1;
 }
 
 .navigation a {
