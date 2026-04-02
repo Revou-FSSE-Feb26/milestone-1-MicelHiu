@@ -76,32 +76,13 @@ h2 {
 }
 
 @media screen and (max-width:1024px) {
-    header {
-        padding: 14px 20px;
-    }
-    main {
-        margin: 34px 18px;
+    .contact-form {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    main {
-        margin: 20px 12px;
-    }
-
     .contact-form {
         width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
     }
 }

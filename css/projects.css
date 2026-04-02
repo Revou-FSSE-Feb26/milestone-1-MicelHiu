@@ -11,21 +11,23 @@ h2 {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .card {
     border: 1px solid;
+    border-radius: 20px;
     padding: 20px;
-    flex-grow: 1;
-    flex-basis: 300px;
     text-align: center;
+    display: grid;
+    grid-template-rows: auto 180px 1fr auto;
+    gap: 12px;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -33,12 +35,25 @@ h2 {
     line-height: 1.5;
 }
 
-.card span {
-    display: inline-block;
-    padding: 8px;
-    margin-top: 8px;
-    border: 2px solid #fadcd5;
-    border-radius: 4px;
+.card-span {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-span span {
+    background: #765d67;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.card:hover {
+    transition: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 5px 4px 10px 3px #FADCD5;
 }
 
 .projects a {
@@ -57,42 +72,21 @@ h2 {
     margin-top: 28px;
 }
 
+
 @media screen and (max-width: 1024px) {
-    header {
-        padding: 14px 22px;
-    }
-
-    main {
-        margin: 30px 18px;
-    }
-
     .projects {
         padding: 18px;
     }
+
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    main {
-        margin: 20px 12px;
-    }
-
     .cards {
         gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
     h2 {
         font-size: 28px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
     }
 }
